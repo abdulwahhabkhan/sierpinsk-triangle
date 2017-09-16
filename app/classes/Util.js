@@ -13,7 +13,7 @@ var counter= 0;
  */
 function createWorker() {
     //load worker file
-    var _worker = new Worker('/dist/worker.js');
+    var _worker = new Worker('dist/worker.js');
     //add message receiver call back from worker
     _worker.onmessage = function (e) {
         var m = JSON.parse(e.data);
